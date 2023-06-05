@@ -8,23 +8,68 @@
 }
 
 .scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px; /* Alterado para um valor pequeno */
-  padding: 10px;
-  cursor: pointer;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue; 
+  color: white; 
+  text-decoration: none;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
 .scroll-to-top:hover {
-  background-color: #0056b3;
+  background-color: #999;
 }
 
-.scroll-to-top i {
-  font-size: 20px;
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.list-container-bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-container-bottom-left h2 {
+  margin-top: 0;
+}
+
+.list-container-bottom-left form {
+  margin-bottom: 10px;
+}
+
+.list-container-bottom-left input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.list-container-bottom-left button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.list-container-bottom-left button:hover {
+  background-color: #45a049;
+}
+
+.list-container-bottom-left ul {
+  padding-left: 20px;
+}
+
+.list-container-bottom-left li {
+  list-style-type: disc;
+  margin-bottom: 5px;
 }
