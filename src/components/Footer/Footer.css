@@ -1,0 +1,23 @@
+/* Beleza, vamos dar um tapa no visual do rodapé! */
+footer {
+  background-color: #333; /* Deixa o fundo do rodapé num cinza escuro bem estiloso */
+  color: #fff; /* O texto branco contrasta bem com o fundo escuro */
+  padding: 1.5rem 0; /* Adiciona um pouco de espaço acima e abaixo do conteúdo do rodapé */
+}
+
+/* Vamos deixar os títulos das colunas do rodapé bem destacados */
+footer h3 {
+  margin-bottom: 1rem; /* Um espacinho abaixo do título pra não grudar no próximo elemento */
+}
+
+/* Agora, vamos estilizar os parágrafos das colunas do rodapé */
+footer p {
+  font-size: 0.9rem; /* Um tamanho menor de fonte pra dar uma diferenciada */
+}
+
+/* Ei, não esquece da responsividade! Estilos específicos para telas menores */
+@media (max-width: 575.98px) {
+  footer h3 {
+    margin-top: 1rem; /* Adiciona um espaço acima do título quando estiver em telas menores */
+  }
+}

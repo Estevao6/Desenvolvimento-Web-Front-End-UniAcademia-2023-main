@@ -1,0 +1,30 @@
+/* Vamos fazer a mágica acontecer com o corpo da nossa página */
+body {
+  background-color: #222; /* Cor de fundo escura pra ficar estiloso */
+}
+
+/* Personalizando os links para que se destaquem */
+a {
+  color: #f0f; /* Cor roxa para os links ficarem maneiríssimos */
+}
+
+/* Vamos deixar os botões com uma cara futurista */
+button {
+  background-color: #f0f; /* Cor de fundo roxa para combinar com os links */
+  color: #fff; /* Cor de texto branca para contrastar */
+  border: none; /* Sem bordas, porque a gente gosta de coisas clean */
+  padding: 1em; /* Espaço interno para o texto respirar */
+}
+
+/* Animação de gradiente para deixar tudo mais dinâmico */
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; /* Inicia a animação com a posição 0% no eixo X e 50% no eixo Y */
+  }
+  50% {
+    background-position: 100% 50%; /* Aos 50% da animação, move o gradiente para 100% no eixo X e mantém 50% no eixo Y */
+  }
+  100% {
+    background-position: 0% 50%; /* Finaliza a animação voltando à posição inicial (0% no eixo X e 50% no eixo Y) */
+  }
+}

@@ -1,0 +1,106 @@
+/* Definindo estilos para o cabeçalho */
+header {
+  display: flex; /* Deixa os elementos do cabeçalho em linha */
+  justify-content: space-between; /* Espaçamento igual entre os elementos */
+  align-items: center; /* Alinha verticalmente os elementos no centro */
+  background-color: #14213d; /* Cor de fundo azul escuro */
+  padding: 1rem; /* Espaçamento interno */
+  font-family: 'Roboto', sans-serif; /* Fonte futurista */
+  position: relative; /* Posicionamento relativo para pseudoelementos */
+}
+
+/* Adicionando linhas abstratas na borda do contêiner */
+header:before,
+header:after {
+  content: ''; /* Conteúdo vazio para os pseudoelementos */
+  position: absolute; /* Posicionamento absoluto */
+  width: 100%; /* Largura total */
+  height: 1px; /* Altura de 1px */
+  background-color: rgba(255, 255, 255, 0.3); /* Cor branca com transparência */
+  top: 0; /* Alinhado ao topo do elemento */
+}
+header:before {
+  transform: translateY(-2px); /* Desloca a linha para cima em 2px */
+}
+header:after {
+  transform: translateY(2px); /* Desloca a linha para baixo em 2px */
+}
+
+/* Estilizando o título (h1) do cabeçalho */
+header h1 {
+  font-size: 2rem; /* Tamanho da fonte */
+  color: #fff; /* Cor branca */
+  text-transform: uppercase; /* Deixa o texto todo em maiúsculo */
+}
+
+/* Definindo o estilo da navegação (nav) */
+header nav {
+  display: flex; /* Deixa os itens da navegação em linha */
+}
+
+/* Estilizando a lista (ul) da navegação */
+header nav ul {
+  display: flex; /* Deixa os itens da lista em linha */
+  list-style: none; /* Remove marcadores da lista */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+}
+
+/* Espaçamento entre os itens (li) da lista */
+header nav ul li {
+  margin-left: 1rem; /* Margem esquerda de 1rem */
+}
+
+/* Estilizando os links (a) da lista */
+header nav ul li a {
+  color: #fff; /* Cor branca */
+  text-decoration: none; /* Remove o sublinhado */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  transition: color 0.5s ease; /* Adiciona uma transição suave de cor */
+}
+
+/* Alterando a cor do link ao passar o mouse */
+header nav ul li a:hover {
+  color: #0ff; /* Muda para um tom de azul claro */
+}
+
+/* Definindo estilos para o botão */
+button {
+  background-color: #0ff; /* Cor de fundo azul claro */
+  color: #222; /* Cor do texto preto */
+  border: none; /* Sem bordas */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif; /* fonte futurista */
+  }
+  
+  button:hover {
+    background-color: #f0f;
+  }
+  
+  /* Definindo estilos para a seção de produtos */
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f0f0f0; /* tom de cinza claro */
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    transition: transform;
+  }

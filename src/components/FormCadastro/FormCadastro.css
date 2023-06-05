@@ -1,0 +1,49 @@
+/* Ei, vamos estilizar o formulário de cadastro! */
+.form-cadastro {
+  max-width: 600px; /* Define a largura máxima do formulário como 600px, deixando-o mais amigável */
+  margin: 0 auto; /* Centraliza o formulário na página, ficando super estiloso */
+  padding: 20px; /* Adiciona um espaço interno no formulário, pra dar uma respirada */
+  background-color: #ffffff; /* Vamos deixar o fundo branquinho, clean e simples */
+  border-radius: 5px; /* Bora arredondar esses cantos e deixar o formulário mais bonitão */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Um pouquinho de sombra pra dar profundidade */
+}
+
+/* Hora de deixar esses campos de input mais organizados */
+.form-cadastro input {
+  margin-bottom: 15px; /* Espaço abaixo de cada campo pra ficar mais organizadinho */
+}
+
+/* Estilizando os botões pra ficarem bonitinhos */
+.form-cadastro button {
+  background-color: #4b0082; /* Um fundo roxo maneiro para os botões */
+  color: #ffffff; /* Texto branco pra contrastar bem com o fundo */
+  border: none; /* Tchau borda, não precisamos de você */
+  cursor: pointer; /* O cursor vira uma mãozinha ao passar sobre o botão */
+  padding: 10px 20px; /* Um espaço interno pra deixar o botão mais confortável */
+  border-radius: 3px; /* Arredondando os cantos, pra ficar harmonioso */
+}
+
+/* Os botões vão mudar de cor ao passar o mouse, ficando mais estilosos */
+.form-cadastro button:hover {
+  background-color: #6a2c91; /* Um tom mais claro de roxo pra dar um efeito legal */
+}
+
+/* Aqui vamos deixar a mensagem de sucesso bem apresentável */
+.success-message {
+  max-width: 600px; /* Vamos manter a largura máxima igual ao formulário, pra ficar tudo alinhadinho */
+  margin: 0 auto; /* Centralizando a mensagem na página, como fizemos com o formulário */
+  padding: 20px; /* Um espaço interno pra mensagem não ficar apertadinha */
+  background-color: #ffffff; /* Deixa o fundo da mensagem branquinho também */
+  border-radius: 5px; /* Arredondando os cantos pra manter o padrão */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Uma sombra leve pra combinar com o formulário */
+}
+
+/* Estilizando o botão "Pular Cadastro" */
+.skip-button {
+  margin-left: 1rem; /* Um espacinho à esquerda pra não grudar no outro botão */
+}
+
+/* Adiciona uma margem superior no formulário e na mensagem de sucesso */
+.form-cadastro, .success-message {
+  margin-top: 2rem; /* Um espaço no topo pra não ficar colado com o conteúdo anterior */
+}

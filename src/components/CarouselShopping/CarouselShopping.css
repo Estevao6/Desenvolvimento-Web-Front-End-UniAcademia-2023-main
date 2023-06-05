@@ -1,0 +1,78 @@
+/* E aí, pessoal! Neste arquivo CSS, vamos ver como deixamos nosso CarouselShopping com uma aparência super maneira.
+   Afinal, o estilo é a chave para um site atraente, certo? */
+
+/* Primeiro, vamos estilizar o container do carrossel. */
+.carouselContainer {
+    /* Definindo a largura do container. */
+    width: 60%;
+    /* Centralizando o container na tela. */
+    margin: auto;
+    /* Usando flexbox para alinhar nossos elementos. */
+    display: flex;
+    /* Centralizando horizontalmente. */
+    justify-content: center;
+    /* Centralizando verticalmente. */
+    align-items: center;
+    /* Adicionando uma borda bonita e estilosa. */
+    border: 2px solid #f1c40f;
+    /* Espaço interno para o container. */
+    padding: 20px;
+    /* Arredondando as bordas do container. */
+    border-radius: 50px;
+    /* Cor de fundo do container. */
+    background-color: #2c3e50;
+    /* Adicionando uma sombra sutil para dar profundidade. */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Agora, vamos estilizar o componente Carousel. */
+.carousel {
+    /* Largura do carrossel. */
+    width: 80%;
+    /* Centralizando o carrossel. */
+    margin: 0 auto;
+}
+
+/* Hora de dar estilo às imagens dentro do carrossel. */
+.carouselImage {
+    /* Largura da imagem. */
+    width: 100%;
+    /* Altura automática para manter a proporção. */
+    height: auto;
+    /* Garantindo que a imagem preencha todo o espaço disponível. */
+    object-fit: cover;
+    /* Bordas arredondadas para as imagens. */
+    border-radius: 20px;
+}
+
+/* Estilizando a legenda das imagens. */
+.carousel-caption {
+    /* Cor de fundo com transparência. */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Cor do texto da legenda. */
+    color: #2c3e50;
+    /* Bordas arredondadas para a legenda. */
+    border-radius: 10px;
+    /* Espaço interno para a legenda. */
+    padding: 10px;
+    /* Posicionamento absoluto para colocar a legenda sobre a imagem. */
+    position: absolute;
+    /* Distância da parte inferior da imagem. */
+    bottom: 20px;
+    /* Distância da parte esquerda da imagem. */
+    left: 20px;
+    /* Distância da parte direita da imagem. */
+    right: 20px;
+    /* Centralizando o texto da legenda. */
+    text-align: center;
+    /* Inicialmente, a legenda fica escondida. */
+    opacity: 0;
+    /* Transição suave para exibir a legenda. */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilizando a legenda quando o usuário passa o mouse sobre a imagem. */
+.carousel-item:hover .carousel-caption {
+    /* A legenda se torna visível ao passível ao passar o mouse sobre a imagem. */
+opacity: 1;
+}

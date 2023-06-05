@@ -1,0 +1,92 @@
+/* Vamos estilizar esse cabeçalho e deixá-lo incrível! */
+.header {
+  display: flex; /* Alinha os elementos lado a lado, como em uma linha */
+  align-items: center; /* Centraliza verticalmente os elementos */
+  justify-content: space-between; /* Espaçamento igual entre os elementos */
+  background-color: #2f3640; /* Cor de fundo escura pra dar destaque */
+  color: #fff; /* Texto branco para contrastar com o fundo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil pra dar profundidade */
+  padding: 16px; /* Um pouco de espaço interno pra respirar */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha quando necessário */
+  position: relative; /* Vamos posicionar alguns elementos internos */
+}
+
+/* Vamos deixar a logo e o título juntos e organizados */
+.logoContainer {
+  display: flex; /* Mantém a logo e o título lado a lado */
+  align-items: center; /* Alinha a logo e o título verticalmente */
+}
+
+/* Estilizando a logo */
+.logoContainer img {
+  width: 48px; /* Largura fixa pra não ficar enorme */
+  height: auto; /* Altura proporcional à largura */
+  margin-right: 10px; /* Um pequeno espaço à direita pra não grudar no título */
+}
+
+/* Vamos dar um tapa no título */
+.logoContainer h1 {
+  margin: 0; /* Remove margens automáticas */
+  font-size: 24px; /* Um tamanho de fonte legal */
+}
+
+/* Estilizando a data e hora */
+.headerDateTime {
+  font-size: 1.2rem; /* Um tamanho um pouco maior */
+  margin: 0; /* Remove margens automáticas */
+  text-align: center; /* Centraliza o texto */
+  position: absolute; /* Posiciona a data e hora no centro do cabeçalho */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Centraliza corretamente */
+}
+
+/* Agora, vamos estilizar a barra de navegação */
+.nav ul {
+  align-items: center; /* Centraliza verticalmente os itens do menu */
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.nav li {
+  margin-right: 20px; /* Espaçamento entre os itens do menu */
+  position: relative; /* Prepara para posicionar o dropdown */
+}
+
+.nav a {
+  color: #fff; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 16px; /* Tamanho da fonte dos links */
+}
+
+/* Efeito de hover (passar o mouse) nos links */
+.nav a:hover,
+.nav span:hover {
+  color: #ff6b6b; /* Cor de destaque quando o mouse passa por cima */
+}
+
+.dropdown {
+  cursor: pointer; /* Muda o ponteiro do mouse para indicar que é clicável */
+
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: #2f3640;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5px;
+  list-style-type: none;
+  z-index: 1000;
+}
+
+.visible {
+  display: block;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
