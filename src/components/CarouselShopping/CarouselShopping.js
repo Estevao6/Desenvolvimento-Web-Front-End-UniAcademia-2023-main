@@ -22,7 +22,7 @@ return (
         <Carousel>
             {/* 
             Beleza, agora precisamos exibir cada imagem, certo?
-            Então, vamos iterar sobre o array 'images' e criar um Carousel.Item para cada uma delas.
+            Então, vamos iterar sobre o array 'images' e criar um Carousel. Item para cada uma delas.
             */}
             {images && images.map((image, index) => (
                 // Cada Carousel.Item precisa de uma chave única, assim o React sabe qual item é qual.

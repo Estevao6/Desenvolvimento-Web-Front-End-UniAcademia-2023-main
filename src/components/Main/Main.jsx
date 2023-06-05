@@ -56,6 +56,9 @@ const Main = () => {
                   <h3>Loja 3</h3>
                 </Link>
               </Col>
+              <button className="scroll-to-top" onClick={scrollToTop}>
+              Ir para o topo
+              </button>
             </Row>
             <Row>
               <Col md="4" className="text-center">
