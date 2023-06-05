@@ -54,6 +54,28 @@ const Main = () => {
                     className="store-image"
                   />
                   <h3>Loja 3</h3>
+                  
+                  <h4>Lista de Compras:</h4>
+                  <ul>
+                  {todos.map((todo) => (
+                  <li
+                  key={todo.id}
+                  className={todo.completed ? 'completed' : ''}
+                  onClick={() => toggleTodoComplete(todo.id)}
+                  >
+                  {todo.text}
+                  </li>
+              ))}
+            </ul>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                value={newTodo}
+                onChange={handleInputChange}
+                placeholder="Adicione um item"
+              />
+              <button type="submit">+</button>
+            </form>
                 </Link>
               </Col>
               <button className="scroll-to-top" onClick={scrollToTop}>
